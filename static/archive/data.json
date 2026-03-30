@@ -1,0 +1,22 @@
+[
+  {
+    "id": "registry-1.docker.io/library/nginx/latest/2026-03-30T01-58-04",
+    "timestamp": "2026-03-30T01:58:04.491251+00:00",
+    "registry": "registry-1.docker.io",
+    "repository": "library/nginx",
+    "tag": "latest",
+    "digest": "sha256-7150b3a39203cb5bee612ff4a9d18774f8c7caf6399d6e8985e97e28eb751c18",
+    "score": 0,
+    "tier": null,
+    "rules_passed": 0,
+    "rules_total": 0,
+    "cve_critical": null,
+    "cve_high": null,
+    "cve_medium": null,
+    "cve_low": null,
+    "age_days": 5,
+    "sbom_component_count": null,
+    "scorecard_score": 5.1,
+    "path": "registry-1.docker.io/library_nginx/latest/2026-03-30T01-58-04Z/report.json"
+  }
+]
