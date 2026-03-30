@@ -45,3 +45,8 @@ jobs:
             git commit -m "chore: archive report for ${{ github.event.inputs.image }}"
             git push origin main
           fi
+
+      - name: Trigger Build & Deploy
+        run: gh workflow run deploy.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
