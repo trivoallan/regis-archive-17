@@ -1,0 +1,2879 @@
+{
+  "version": "0.20.0",
+  "request": {
+    "url": "nginx:alpine",
+    "registry": "registry-1.docker.io",
+    "repository": "library/nginx",
+    "tag": "alpine",
+    "digest": "sha256-e7257f1ef28ba17cf7c248cb8ccf6f0c6e0228ab9c315c152f9c203cd34cf6d1",
+    "analyzers": [
+      "dockle",
+      "endoflife",
+      "freshness",
+      "hadolint",
+      "popularity",
+      "provenance",
+      "sbom",
+      "scorecarddev",
+      "size",
+      "skopeo",
+      "trivy",
+      "versioning"
+    ],
+    "timestamp": "2026-03-30T02:07:07.874676+00:00"
+  },
+  "results": {
+    "endoflife": {
+      "analyzer": "endoflife",
+      "repository": "library/nginx",
+      "product": "nginx",
+      "product_found": true,
+      "tag": "alpine",
+      "matched_cycle": null,
+      "is_eol": null,
+      "active_cycles_count": 2,
+      "eol_cycles_count": 19
+    },
+    "popularity": {
+      "analyzer": "popularity",
+      "repository": "library/nginx",
+      "available": true,
+      "pull_count": 12893938518,
+      "star_count": 21233,
+      "description": "Official build of Nginx.",
+      "last_updated": "2026-03-25T13:52:12.786612Z",
+      "date_registered": "2014-06-05T19:14:45Z",
+      "is_official": true
+    },
+    "provenance": {
+      "analyzer": "provenance",
+      "repository": "library/nginx",
+      "tag": "alpine",
+      "has_provenance": false,
+      "has_cosign_signature": false,
+      "source_tracked": false,
+      "indicators_count": 0,
+      "indicators": []
+    },
+    "hadolint": {
+      "analyzer": "hadolint",
+      "repository": "library/nginx",
+      "tag": "alpine",
+      "passed": false,
+      "issues_count": 24,
+      "issues_by_level": {
+        "error": 1,
+        "warning": 4,
+        "info": 19,
+        "style": 0
+      },
+      "issues": [
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 3
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 4
+        },
+        {
+          "code": "SC1072",
+          "level": "error",
+          "message": " Fix any mentioned problems and try again.",
+          "line": 4
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 5
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 6
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 7
+        },
+        {
+          "code": "DL3047",
+          "level": "info",
+          "message": "Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+          "line": 8
+        },
+        {
+          "code": "DL3018",
+          "level": "warning",
+          "message": "Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+          "line": 8
+        },
+        {
+          "code": "DL4006",
+          "level": "warning",
+          "message": "Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+          "line": 8
+        },
+        {
+          "code": "SC2086",
+          "level": "info",
+          "message": "Double quote to prevent globbing and word splitting.",
+          "line": 8
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 10
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 11
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 12
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 13
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 14
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 15
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 16
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 17
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 18
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 19
+        },
+        {
+          "code": "DL3059",
+          "level": "info",
+          "message": "Multiple consecutive `RUN` instructions. Consider consolidation.",
+          "line": 20
+        },
+        {
+          "code": "SC2086",
+          "level": "info",
+          "message": "Double quote to prevent globbing and word splitting.",
+          "line": 21
+        },
+        {
+          "code": "DL3018",
+          "level": "warning",
+          "message": "Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+          "line": 21
+        },
+        {
+          "code": "DL4006",
+          "level": "warning",
+          "message": "Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+          "line": 21
+        }
+      ],
+      "dockerfile": "FROM scratch\nRUN ADD alpine-minirootfs-3.23.3-x86_64.tar.gz / # buildkit\nRUN CMD [\"/bin/sh\"]\nRUN LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>\nRUN ENV NGINX_VERSION=1.29.7\nRUN ENV PKG_RELEASE=1\nRUN ENV DYNPKG_RELEASE=1\nRUN RUN /bin/sh -c set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch=\"$(cat /etc/apk/arch)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     \"     && apk add --no-cache --virtual .checksum-deps         openssl     && case \"$apkArch\" in         x86_64|aarch64)             set -x             && KEY_SHA512=\"e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655\"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo \"$KEY_SHA512 */tmp/nginx_signing.rsa.pub\" | sha512sum -c -; then                 echo \"key verification succeeded!\";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo \"key verification failed!\";                 exit 1;             fi             && DEPS=$(apk query --summarize depends --recursive --no-cache                        --repository \"@nginxorg https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\"                        ${nginxPackages/=/@nginxorg=})             && apk add --no-cache $DEPS             && apk add --repositories-file /dev/null -X \"https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir=\"$(mktemp -d)\"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\\\"9ae89f2f9efefec1c7098bfb8da88da93b1370230989dc3cdf3eb3a8d9bf6b777c9dfff7998ea173317f38a66ebc92f8fabf77f024a596a17d0f8a42dfc74b5a *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\\\"                 && if [ \\\"\\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\\\" = \\\"\\$PKGOSSCHECKSUM\\\" ]; then                     echo \\\"pkg-oss tarball checksum verification succeeded!\\\";                 else                     echo \\\"pkg-oss tarball checksum verification failed!\\\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && DEPS=$(apk query --summarize depends --recursive --no-cache                        --repository \"@nginxorg ${tempDir}/packages/alpine/\"                        ${nginxPackages/=/@nginxorg=})             && apk add --no-cache $DEPS             && apk add --repositories-file /dev/null -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     && if [ -f \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit\nRUN COPY docker-entrypoint.sh / # buildkit\nRUN COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit\nRUN COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit\nRUN COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit\nRUN COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit\nRUN ENTRYPOINT [\"/docker-entrypoint.sh\"]\nRUN EXPOSE map[80/tcp:{}]\nRUN STOPSIGNAL SIGQUIT\nRUN CMD [\"nginx\" \"-g\" \"daemon off;\"]\nRUN ENV NJS_VERSION=0.9.6\nRUN ENV NJS_RELEASE=1\nRUN ENV ACME_VERSION=0.3.1\nRUN RUN /bin/sh -c set -x     && apkArch=\"$(cat /etc/apk/arch)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}         nginx-module-acme=${NGINX_VERSION}.${ACME_VERSION}-r${PKG_RELEASE}     \"     && apk add --no-cache --virtual .checksum-deps         openssl     && case \"$apkArch\" in         x86_64|aarch64)             apk add -X \"https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir=\"$(mktemp -d)\"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl                 cargo                 clang-libclang             && su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\\\"9ae89f2f9efefec1c7098bfb8da88da93b1370230989dc3cdf3eb3a8d9bf6b777c9dfff7998ea173317f38a66ebc92f8fabf77f024a596a17d0f8a42dfc74b5a *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\\\"                 && if [ \\\"\\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\\\" = \\\"\\$PKGOSSCHECKSUM\\\" ]; then                     echo \\\"pkg-oss tarball checksum verification succeeded!\\\";                 else                     echo \\\"pkg-oss tarball checksum verification failed!\\\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && export BUILDTARGET=\\\"module-geoip module-image-filter module-njs module-xslt module-acme\\\"                 && if [ \\\"\\$(apk --print-arch)\\\" = \\\"armhf\\\" ]; then BUILDTARGET=\\\"\\$( echo \\$BUILDTARGET | sed 's,module-acme,,' )\\\"; fi                 && make \\$BUILDTARGET                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && if [ \"$apkArch\" = \"armhf\" ]; then nginxPackages=\"$( echo $nginxPackages | sed 's,nginx-module-acme=.*,,')\"; fi             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     && if [ -f \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit"
+    },
+    "freshness": {
+      "analyzer": "freshness",
+      "repository": "library/nginx",
+      "tag": "alpine",
+      "tag_created": "2026-03-24T23:11:07.297157765Z",
+      "latest_created": "2026-03-24T22:12:14.449978521Z",
+      "age_days": 5,
+      "behind_latest_days": 0,
+      "is_latest": true
+    },
+    "scorecarddev": {
+      "analyzer": "scorecarddev",
+      "repository": "library/nginx",
+      "source_repo": "https://github.com/nginxinc/docker-nginx",
+      "scorecard_available": true,
+      "score": 5.1,
+      "checks": [
+        {
+          "name": "Packaging",
+          "score": -1,
+          "reason": "packaging workflow not detected"
+        },
+        {
+          "name": "Code-Review",
+          "score": 5,
+          "reason": "Found 10/19 approved changesets -- score normalized to 5"
+        },
+        {
+          "name": "Binary-Artifacts",
+          "score": 10,
+          "reason": "no binaries found in the repo"
+        },
+        {
+          "name": "Token-Permissions",
+          "score": 0,
+          "reason": "detected GitHub workflow tokens with excessive permissions"
+        },
+        {
+          "name": "Maintained",
+          "score": 10,
+          "reason": "16 commit(s) and 9 issue activity found in the last 90 days -- score normalized to 10"
+        },
+        {
+          "name": "Security-Policy",
+          "score": 10,
+          "reason": "security policy file detected"
+        },
+        {
+          "name": "Dangerous-Workflow",
+          "score": 10,
+          "reason": "no dangerous workflow patterns detected"
+        },
+        {
+          "name": "CII-Best-Practices",
+          "score": 0,
+          "reason": "no effort to earn an OpenSSF best practices badge detected"
+        },
+        {
+          "name": "Fuzzing",
+          "score": 0,
+          "reason": "project is not fuzzed"
+        },
+        {
+          "name": "License",
+          "score": 10,
+          "reason": "license file detected"
+        },
+        {
+          "name": "Signed-Releases",
+          "score": -1,
+          "reason": "no releases found"
+        },
+        {
+          "name": "Branch-Protection",
+          "score": 0,
+          "reason": "branch protection not enabled on development/release branches"
+        },
+        {
+          "name": "SAST",
+          "score": 0,
+          "reason": "SAST tool is not run on all commits -- score normalized to 0"
+        },
+        {
+          "name": "Pinned-Dependencies",
+          "score": 1,
+          "reason": "dependency not pinned by hash detected -- score normalized to 1"
+        }
+      ]
+    },
+    "dockle": {
+      "analyzer": "dockle",
+      "repository": "library/nginx",
+      "tag": "alpine",
+      "passed": false,
+      "issues_count": 4,
+      "issues_by_level": {
+        "FATAL": 1,
+        "WARN": 1,
+        "INFO": 2,
+        "SKIP": 0,
+        "PASS": 0
+      },
+      "issues": [
+        {
+          "code": "CIS-DI-0010",
+          "level": "FATAL",
+          "title": "Do not store credential in environment variables/files",
+          "alerts": [
+            "Suspicious ENV key found : KEY_SHA512 on RUN /bin/sh -c set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch=\"$(cat /etc/apk/arch)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     \"     && apk add --no-cache --virtual .checksum-deps         openssl     && case \"$apkArch\" in         x86_64|aarch64)             set -x             && KEY_SHA512=\"*******\"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo \"$KEY_SHA512 */tmp/nginx_signing.rsa.pub\" | sha512sum -c -; then                 echo \"key verification succeeded!\";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo \"key verification failed!\";                 exit 1;             fi             && DEPS=$(apk query --summarize depends --recursive --no-cache                        --repository \"@nginxorg https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\"                        ${nginxPackages/=/@nginxorg=})             && apk add --no-cache $DEPS             && apk add --repositories-file /dev/null -X \"https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir=\"$(mktemp -d)\"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\\\"9ae89f2f9efefec1c7098bfb8da88da93b1370230989dc3cdf3eb3a8d9bf6b777c9dfff7998ea173317f38a66ebc92f8fabf77f024a596a17d0f8a42dfc74b5a *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\\\"                 && if [ \\\"\\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\\\" = \\\"\\$PKGOSSCHECKSUM\\\" ]; then                     echo \\\"pkg-oss tarball checksum verification succeeded!\\\";                 else                     echo \\\"pkg-oss tarball checksum verification failed!\\\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && DEPS=$(apk query --summarize depends --recursive --no-cache                        --repository \"@nginxorg ${tempDir}/packages/alpine/\"                        ${nginxPackages/=/@nginxorg=})             && apk add --no-cache $DEPS             && apk add --repositories-file /dev/null -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     && if [ -f \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit (You can suppress it with --accept-key)"
+          ]
+        },
+        {
+          "code": "CIS-DI-0001",
+          "level": "WARN",
+          "title": "Create a user for the container",
+          "alerts": [
+            "Last user should not be root"
+          ]
+        },
+        {
+          "code": "CIS-DI-0005",
+          "level": "INFO",
+          "title": "Enable Content trust for Docker",
+          "alerts": [
+            "export DOCKER_CONTENT_TRUST=1 before docker pull/build"
+          ]
+        },
+        {
+          "code": "CIS-DI-0006",
+          "level": "INFO",
+          "title": "Add HEALTHCHECK instruction to the container image",
+          "alerts": [
+            "not found HEALTHCHECK statement"
+          ]
+        }
+      ]
+    },
+    "sbom": {
+      "analyzer": "sbom",
+      "repository": "library/nginx",
+      "tag": "alpine",
+      "has_sbom": true,
+      "sbom_format": "CycloneDX",
+      "sbom_version": "1.6",
+      "total_components": 73,
+      "component_types": {
+        "operating-system": 1,
+        "library": 72
+      },
+      "total_dependencies": 74,
+      "licenses": [
+        "0BSD",
+        "2-clause",
+        "Apache-2.0",
+        "BSD-2-Clause",
+        "BSD-3-Clause",
+        "Beerware",
+        "Domain",
+        "FTL",
+        "GD",
+        "GPL-2.0-only",
+        "GPL-2.0-or-later",
+        "GPL-3.0-or-later",
+        "IJG",
+        "ISC",
+        "LGPL-2.1-or-later",
+        "LGPL-3.0-or-later",
+        "Libpng",
+        "MIT",
+        "MPL-2.0",
+        "Public",
+        "Public-Domain",
+        "X-11",
+        "Zlib",
+        "bzip-2-1.0.6",
+        "curl",
+        "custom",
+        "libtiff",
+        "license"
+      ],
+      "copyleft_licenses": [
+        "GPL-2.0-only",
+        "GPL-2.0-or-later",
+        "GPL-3.0-or-later",
+        "LGPL-2.1-or-later",
+        "LGPL-3.0-or-later",
+        "MPL-2.0"
+      ],
+      "components": [
+        {
+          "name": "alpine",
+          "version": "3.23.3",
+          "type": "operating-system",
+          "purl": null,
+          "licenses": []
+        },
+        {
+          "name": "alpine-baselayout-data",
+          "version": "3.7.1-r8",
+          "type": "library",
+          "purl": "pkg:apk/alpine/alpine-baselayout-data@3.7.1-r8?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-only"
+          ]
+        },
+        {
+          "name": "alpine-baselayout",
+          "version": "3.7.1-r8",
+          "type": "library",
+          "purl": "pkg:apk/alpine/alpine-baselayout@3.7.1-r8?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-only"
+          ]
+        },
+        {
+          "name": "alpine-keys",
+          "version": "2.6-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/alpine-keys@2.6-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "alpine-release",
+          "version": "3.23.3-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/alpine-release@3.23.3-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "aom-libs",
+          "version": "3.13.1-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/aom-libs@3.13.1-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-2-Clause",
+            "custom"
+          ]
+        },
+        {
+          "name": "apk-tools",
+          "version": "3.0.3-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/apk-tools@3.0.3-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-only"
+          ]
+        },
+        {
+          "name": "brotli-libs",
+          "version": "1.2.0-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/brotli-libs@1.2.0-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "busybox-binsh",
+          "version": "1.37.0-r30",
+          "type": "library",
+          "purl": "pkg:apk/alpine/busybox-binsh@1.37.0-r30?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-only"
+          ]
+        },
+        {
+          "name": "busybox",
+          "version": "1.37.0-r30",
+          "type": "library",
+          "purl": "pkg:apk/alpine/busybox@1.37.0-r30?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-only"
+          ]
+        },
+        {
+          "name": "c-ares",
+          "version": "1.34.6-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/c-ares@1.34.6-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "ca-certificates-bundle",
+          "version": "20251003-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/ca-certificates-bundle@20251003-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MPL-2.0",
+            "MIT"
+          ]
+        },
+        {
+          "name": "ca-certificates",
+          "version": "20251003-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/ca-certificates@20251003-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MPL-2.0",
+            "MIT"
+          ]
+        },
+        {
+          "name": "curl",
+          "version": "8.17.0-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/curl@8.17.0-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "curl"
+          ]
+        },
+        {
+          "name": "fontconfig",
+          "version": "2.17.1-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/fontconfig@2.17.1-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "freetype",
+          "version": "2.14.1-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/freetype@2.14.1-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "FTL",
+            "GPL-2.0-or-later"
+          ]
+        },
+        {
+          "name": "geoip",
+          "version": "1.6.12-r6",
+          "type": "library",
+          "purl": "pkg:apk/alpine/geoip@1.6.12-r6?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "LGPL-2.1-or-later"
+          ]
+        },
+        {
+          "name": "gettext-envsubst",
+          "version": "0.24.1-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/gettext-envsubst@0.24.1-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-3.0-or-later",
+            "LGPL-2.1-or-later",
+            "MIT"
+          ]
+        },
+        {
+          "name": "libapk",
+          "version": "3.0.3-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libapk@3.0.3-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-only"
+          ]
+        },
+        {
+          "name": "libavif",
+          "version": "1.3.0-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libavif@1.3.0-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-2-Clause"
+          ]
+        },
+        {
+          "name": "libbsd",
+          "version": "0.12.2-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libbsd@0.12.2-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "name": "libbz2",
+          "version": "1.0.8-r6",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libbz2@1.0.8-r6?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "bzip-2-1.0.6"
+          ]
+        },
+        {
+          "name": "libcrypto3",
+          "version": "3.5.5-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "name": "libcurl",
+          "version": "8.17.0-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libcurl@8.17.0-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "curl"
+          ]
+        },
+        {
+          "name": "libdav1d",
+          "version": "1.5.2-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libdav1d@1.5.2-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-2-Clause"
+          ]
+        },
+        {
+          "name": "libedit",
+          "version": "20251016.3.1-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libedit@20251016.3.1-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "name": "libexpat",
+          "version": "2.7.5-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libexpat@2.7.5-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libgcc",
+          "version": "15.2.0-r2",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libgcc@15.2.0-r2?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-2.1-or-later"
+          ]
+        },
+        {
+          "name": "libgd",
+          "version": "2.3.3-r10",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libgd@2.3.3-r10?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GD"
+          ]
+        },
+        {
+          "name": "libice",
+          "version": "1.1.2-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libice@1.1.2-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "X-11"
+          ]
+        },
+        {
+          "name": "libidn2",
+          "version": "2.3.8-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libidn2@2.3.8-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-3.0-or-later"
+          ]
+        },
+        {
+          "name": "libintl",
+          "version": "0.24.1-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libintl@0.24.1-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "LGPL-2.1-or-later"
+          ]
+        },
+        {
+          "name": "libjpeg-turbo",
+          "version": "3.1.2-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libjpeg-turbo@3.1.2-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause",
+            "IJG",
+            "Zlib"
+          ]
+        },
+        {
+          "name": "libmd",
+          "version": "1.1.0-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libmd@1.1.0-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause",
+            "BSD-2-Clause",
+            "ISC",
+            "Beerware",
+            "Public",
+            "Domain"
+          ]
+        },
+        {
+          "name": "libncursesw",
+          "version": "6.5_p20251123-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libncursesw@6.5_p20251123-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "X-11"
+          ]
+        },
+        {
+          "name": "libpng",
+          "version": "1.6.55-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libpng@1.6.55-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "Libpng"
+          ]
+        },
+        {
+          "name": "libpsl",
+          "version": "0.21.5-r3",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libpsl@0.21.5-r3?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libsharpyuv",
+          "version": "1.6.0-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libsharpyuv@1.6.0-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "name": "libsm",
+          "version": "1.2.6-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libsm@1.2.6-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libssl3",
+          "version": "3.5.5-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "name": "libstdc++",
+          "version": "15.2.0-r2",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libstdc%2B%2B@15.2.0-r2?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-2.1-or-later"
+          ]
+        },
+        {
+          "name": "libunistring",
+          "version": "1.4.1-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libunistring@1.4.1-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-3.0-or-later"
+          ]
+        },
+        {
+          "name": "libuuid",
+          "version": "2.41.2-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libuuid@2.41.2-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "name": "libwebp",
+          "version": "1.6.0-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libwebp@1.6.0-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "name": "libx11",
+          "version": "1.8.12-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libx11@1.8.12-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "X-11"
+          ]
+        },
+        {
+          "name": "libxau",
+          "version": "1.0.12-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libxau@1.0.12-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libxcb",
+          "version": "1.17.0-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libxcb@1.17.0-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libxdmcp",
+          "version": "1.1.5-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libxdmcp@1.1.5-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libxext",
+          "version": "1.3.6-r2",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libxext@1.3.6-r2?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libxml2",
+          "version": "2.13.9-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libxml2@2.13.9-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libxpm",
+          "version": "3.5.17-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libxpm@3.5.17-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "X-11"
+          ]
+        },
+        {
+          "name": "libxslt",
+          "version": "1.1.43-r3",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libxslt@1.1.43-r3?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "X-11"
+          ]
+        },
+        {
+          "name": "libxt",
+          "version": "1.3.1-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libxt@1.3.1-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "libyuv",
+          "version": "0.0.1887.20251502-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/libyuv@0.0.1887.20251502-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "name": "musl-utils",
+          "version": "1.2.5-r21",
+          "type": "library",
+          "purl": "pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT",
+            "BSD-2-Clause",
+            "GPL-2.0-or-later"
+          ]
+        },
+        {
+          "name": "musl",
+          "version": "1.2.5-r21",
+          "type": "library",
+          "purl": "pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "ncurses-terminfo-base",
+          "version": "6.5_p20251123-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/ncurses-terminfo-base@6.5_p20251123-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "X-11"
+          ]
+        },
+        {
+          "name": "nghttp2-libs",
+          "version": "1.68.0-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/nghttp2-libs@1.68.0-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "nghttp3",
+          "version": "1.13.1-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/nghttp3@1.13.1-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "name": "nginx-module-acme",
+          "version": "1.29.7.0.3.1-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/nginx-module-acme@1.29.7.0.3.1-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "2-clause",
+            "BSD-3-Clause",
+            "license"
+          ]
+        },
+        {
+          "name": "nginx-module-geoip",
+          "version": "1.29.7-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/nginx-module-geoip@1.29.7-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "2-clause",
+            "BSD-3-Clause",
+            "license"
+          ]
+        },
+        {
+          "name": "nginx-module-image-filter",
+          "version": "1.29.7-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/nginx-module-image-filter@1.29.7-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "2-clause",
+            "BSD-3-Clause",
+            "license"
+          ]
+        },
+        {
+          "name": "nginx-module-njs",
+          "version": "1.29.7.0.9.6-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/nginx-module-njs@1.29.7.0.9.6-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "2-clause",
+            "BSD-3-Clause",
+            "license"
+          ]
+        },
+        {
+          "name": "nginx-module-xslt",
+          "version": "1.29.7-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/nginx-module-xslt@1.29.7-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "2-clause",
+            "BSD-3-Clause",
+            "license"
+          ]
+        },
+        {
+          "name": "nginx",
+          "version": "1.29.7-r1",
+          "type": "library",
+          "purl": "pkg:apk/alpine/nginx@1.29.7-r1?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "2-clause",
+            "BSD-3-Clause",
+            "license"
+          ]
+        },
+        {
+          "name": "pcre2",
+          "version": "10.47-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/pcre2@10.47-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "name": "scanelf",
+          "version": "1.3.8-r2",
+          "type": "library",
+          "purl": "pkg:apk/alpine/scanelf@1.3.8-r2?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-only"
+          ]
+        },
+        {
+          "name": "ssl_client",
+          "version": "1.37.0-r30",
+          "type": "library",
+          "purl": "pkg:apk/alpine/ssl_client@1.37.0-r30?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-only"
+          ]
+        },
+        {
+          "name": "tiff",
+          "version": "4.7.1-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/tiff@4.7.1-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "libtiff"
+          ]
+        },
+        {
+          "name": "tzdata",
+          "version": "2026a-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/tzdata@2026a-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "Public-Domain"
+          ]
+        },
+        {
+          "name": "xz-libs",
+          "version": "5.8.2-r0",
+          "type": "library",
+          "purl": "pkg:apk/alpine/xz-libs@5.8.2-r0?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "GPL-2.0-or-later",
+            "0BSD",
+            "Public-Domain",
+            "LGPL-2.1-or-later"
+          ]
+        },
+        {
+          "name": "zlib",
+          "version": "1.3.1-r2",
+          "type": "library",
+          "purl": "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "Zlib"
+          ]
+        },
+        {
+          "name": "zstd-libs",
+          "version": "1.5.7-r2",
+          "type": "library",
+          "purl": "pkg:apk/alpine/zstd-libs@1.5.7-r2?arch=x86_64&distro=3.23.3",
+          "licenses": [
+            "BSD-3-Clause",
+            "GPL-2.0-or-later"
+          ]
+        }
+      ]
+    },
+    "versioning": {
+      "analyzer": "versioning",
+      "repository": "library/nginx",
+      "total_tags": 1091,
+      "dominant_pattern": "semver-prerelease",
+      "semver_compliant_percentage": 68.5,
+      "patterns": [
+        {
+          "pattern": "named",
+          "count": 320,
+          "percentage": 29.3,
+          "examples": [
+            "1-alpine",
+            "1-alpine-otel",
+            "1-alpine-perl",
+            "1-alpine-slim",
+            "1-alpine3.17",
+            "1-alpine3.17-perl",
+            "1-alpine3.17-slim",
+            "1-alpine3.18",
+            "1-alpine3.18-otel",
+            "1-alpine3.18-perl"
+          ]
+        },
+        {
+          "pattern": "numeric",
+          "count": 24,
+          "percentage": 2.2,
+          "examples": [
+            "1",
+            "1.10",
+            "1.11",
+            "1.12",
+            "1.13",
+            "1.14",
+            "1.15",
+            "1.16",
+            "1.17",
+            "1.18"
+          ]
+        },
+        {
+          "pattern": "semver",
+          "count": 142,
+          "percentage": 13.0,
+          "examples": [
+            "1.10.0",
+            "1.10.1",
+            "1.10.2",
+            "1.10.3",
+            "1.11.0",
+            "1.11.1",
+            "1.11.10",
+            "1.11.12",
+            "1.11.13",
+            "1.11.3"
+          ]
+        },
+        {
+          "pattern": "semver-prerelease",
+          "count": 360,
+          "percentage": 33.0,
+          "examples": [
+            "1.12.0-alpine-perl",
+            "1.12.0-perl",
+            "1.12.1-alpine-perl",
+            "1.12.1-perl",
+            "1.12.2-alpine-perl",
+            "1.12.2-perl",
+            "1.13.0-alpine-perl",
+            "1.13.0-perl",
+            "1.13.1-alpine-perl",
+            "1.13.1-perl"
+          ]
+        },
+        {
+          "pattern": "semver-variant",
+          "count": 245,
+          "percentage": 22.5,
+          "examples": [
+            "1.10.0-alpine",
+            "1.10.1-alpine",
+            "1.10.2-alpine",
+            "1.10.3-alpine",
+            "1.11.0-alpine",
+            "1.11.1-alpine",
+            "1.11.10-alpine",
+            "1.11.12-alpine",
+            "1.11.13-alpine",
+            "1.11.3-alpine"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "name": "alpine",
+          "count": 346,
+          "percentage": 31.7,
+          "examples": [
+            "1-alpine",
+            "1-alpine-otel",
+            "1-alpine-perl",
+            "1-alpine-slim",
+            "1.10-alpine",
+            "1.10.0-alpine",
+            "1.10.1-alpine",
+            "1.10.2-alpine",
+            "1.10.3-alpine",
+            "1.11-alpine"
+          ]
+        },
+        {
+          "name": "slim",
+          "count": 116,
+          "percentage": 10.6,
+          "examples": [
+            "1-alpine-slim",
+            "1-alpine3.17-slim",
+            "1-alpine3.18-slim",
+            "1-alpine3.19-slim",
+            "1-alpine3.20-slim",
+            "1-alpine3.21-slim",
+            "1-alpine3.22-slim",
+            "1-alpine3.23-slim",
+            "1.22-alpine-slim",
+            "1.22-alpine3.17-slim"
+          ]
+        },
+        {
+          "name": "bookworm",
+          "count": 78,
+          "percentage": 7.1,
+          "examples": [
+            "1-bookworm",
+            "1-bookworm-otel",
+            "1-bookworm-perl",
+            "1.25-bookworm",
+            "1.25-bookworm-otel",
+            "1.25-bookworm-perl",
+            "1.25.1-bookworm",
+            "1.25.1-bookworm-perl",
+            "1.25.2-bookworm",
+            "1.25.2-bookworm-perl"
+          ]
+        },
+        {
+          "name": "alpine3.23",
+          "count": 52,
+          "percentage": 4.8,
+          "examples": [
+            "1-alpine3.23",
+            "1-alpine3.23-otel",
+            "1-alpine3.23-perl",
+            "1-alpine3.23-slim",
+            "1.28-alpine3.23",
+            "1.28-alpine3.23-otel",
+            "1.28-alpine3.23-perl",
+            "1.28-alpine3.23-slim",
+            "1.28.1-alpine3.23",
+            "1.28.1-alpine3.23-otel"
+          ]
+        },
+        {
+          "name": "trixie",
+          "count": 45,
+          "percentage": 4.1,
+          "examples": [
+            "1-trixie",
+            "1-trixie-otel",
+            "1-trixie-perl",
+            "1.28-trixie",
+            "1.28-trixie-otel",
+            "1.28-trixie-perl",
+            "1.28.1-trixie",
+            "1.28.1-trixie-otel",
+            "1.28.1-trixie-perl",
+            "1.28.2-trixie"
+          ]
+        },
+        {
+          "name": "alpine3.19",
+          "count": 44,
+          "percentage": 4.0,
+          "examples": [
+            "1-alpine3.19",
+            "1-alpine3.19-otel",
+            "1-alpine3.19-perl",
+            "1-alpine3.19-slim",
+            "1.25-alpine3.19",
+            "1.25-alpine3.19-otel",
+            "1.25-alpine3.19-perl",
+            "1.25-alpine3.19-slim",
+            "1.25.5-alpine3.19",
+            "1.25.5-alpine3.19-otel"
+          ]
+        },
+        {
+          "name": "alpine3.20",
+          "count": 44,
+          "percentage": 4.0,
+          "examples": [
+            "1-alpine3.20",
+            "1-alpine3.20-otel",
+            "1-alpine3.20-perl",
+            "1-alpine3.20-slim",
+            "1.26-alpine3.20",
+            "1.26-alpine3.20-otel",
+            "1.26-alpine3.20-perl",
+            "1.26-alpine3.20-slim",
+            "1.26.2-alpine3.20",
+            "1.26.2-alpine3.20-otel"
+          ]
+        },
+        {
+          "name": "alpine3.17",
+          "count": 39,
+          "percentage": 3.6,
+          "examples": [
+            "1-alpine3.17",
+            "1-alpine3.17-perl",
+            "1-alpine3.17-slim",
+            "1.22-alpine3.17",
+            "1.22-alpine3.17-perl",
+            "1.22-alpine3.17-slim",
+            "1.22.1-alpine3.17",
+            "1.22.1-alpine3.17-perl",
+            "1.22.1-alpine3.17-slim",
+            "1.23-alpine3.17"
+          ]
+        },
+        {
+          "name": "alpine3.21",
+          "count": 36,
+          "percentage": 3.3,
+          "examples": [
+            "1-alpine3.21",
+            "1-alpine3.21-otel",
+            "1-alpine3.21-perl",
+            "1-alpine3.21-slim",
+            "1.27-alpine3.21",
+            "1.27-alpine3.21-otel",
+            "1.27-alpine3.21-perl",
+            "1.27-alpine3.21-slim",
+            "1.27.4-alpine3.21",
+            "1.27.4-alpine3.21-otel"
+          ]
+        },
+        {
+          "name": "alpine3.22",
+          "count": 32,
+          "percentage": 2.9,
+          "examples": [
+            "1-alpine3.22",
+            "1-alpine3.22-otel",
+            "1-alpine3.22-perl",
+            "1-alpine3.22-slim",
+            "1.29-alpine3.22",
+            "1.29-alpine3.22-otel",
+            "1.29-alpine3.22-perl",
+            "1.29-alpine3.22-slim",
+            "1.29.0-alpine3.22",
+            "1.29.0-alpine3.22-otel"
+          ]
+        },
+        {
+          "name": "alpine3.18",
+          "count": 26,
+          "percentage": 2.4,
+          "examples": [
+            "1-alpine3.18",
+            "1-alpine3.18-otel",
+            "1-alpine3.18-perl",
+            "1-alpine3.18-slim",
+            "1.25-alpine3.18",
+            "1.25-alpine3.18-otel",
+            "1.25-alpine3.18-perl",
+            "1.25-alpine3.18-slim",
+            "1.25.2-alpine3.18",
+            "1.25.2-alpine3.18-perl"
+          ]
+        },
+        {
+          "name": "bullseye",
+          "count": 24,
+          "percentage": 2.2,
+          "examples": [
+            "1-bullseye",
+            "1-bullseye-perl",
+            "1.22-bullseye",
+            "1.22-bullseye-perl",
+            "1.22.1-bullseye",
+            "1.22.1-bullseye-perl",
+            "1.23-bullseye",
+            "1.23-bullseye-perl",
+            "1.23.4-bullseye",
+            "1.23.4-bullseye-perl"
+          ]
+        }
+      ],
+      "release_lines": [
+        "1",
+        "1.29",
+        "1.29.7"
+      ]
+    },
+    "skopeo": {
+      "analyzer": "skopeo",
+      "repository": "library/nginx",
+      "tag": "alpine",
+      "platforms": [
+        {
+          "architecture": "amd64",
+          "os": "linux",
+          "digest": "sha256:7e89aa6cabfc80f566b1b77b981f4bb98413bd2d513ca9a30f63fe58b4af6903",
+          "created": "2026-03-24T23:11:07.297157765Z",
+          "labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+          },
+          "layers_count": 8,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "unknown",
+          "os": "unknown",
+          "digest": "sha256:6aaf17d698e44340eca3ae4c4844907b2d3732e8bbc7a315c0e37f7e7c436a76",
+          "created": null,
+          "labels": {},
+          "layers_count": 2,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "arm",
+          "os": "linux",
+          "digest": "sha256:3c82cd3a408ca7917c7fc3b32e29ebeac6d821bd1d31f5d1e3734369e156e0c6",
+          "variant": "v6",
+          "created": "2026-03-24T23:13:12.319706698Z",
+          "labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+          },
+          "layers_count": 8,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "user": ""
+        },
+        {
+          "architecture": "unknown",
+          "os": "unknown",
+          "digest": "sha256:05c0bc3601f4fe69353891761645ae02b911950cf70886c10a7c5c8c4c072c84",
+          "created": null,
+          "labels": {},
+          "layers_count": 1,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "arm",
+          "os": "linux",
+          "digest": "sha256:4d0a6649878d4e5216b60bdbde1b144d3a05913ac1216ba899bd7c1898cfe21b",
+          "variant": "v7",
+          "created": "2026-03-24T23:19:25.744401696Z",
+          "labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+          },
+          "layers_count": 8,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "user": ""
+        },
+        {
+          "architecture": "unknown",
+          "os": "unknown",
+          "digest": "sha256:cb6e73b3338b9b473d158cbf17b889e60b2a77542d1e414a9128fd57d00ba4c9",
+          "created": null,
+          "labels": {},
+          "layers_count": 2,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "arm64",
+          "os": "linux",
+          "digest": "sha256:d70d63a8de139d41315d23b75cefcc12b718a3b29d23862676474b7e8875628e",
+          "variant": "v8",
+          "created": "2026-03-24T23:10:39.631900496Z",
+          "labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+          },
+          "layers_count": 8,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "user": ""
+        },
+        {
+          "architecture": "unknown",
+          "os": "unknown",
+          "digest": "sha256:74ceecba511abd0ebf5a2422c7b334028951f292b41fef39822ec4c4a273222d",
+          "created": null,
+          "labels": {},
+          "layers_count": 2,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "386",
+          "os": "linux",
+          "digest": "sha256:36f85822fa63da71f66a9851c871efc5f5d3fc60b58137ac7f85ab30efac5bce",
+          "created": "2026-03-24T23:14:36.464729301Z",
+          "labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+          },
+          "layers_count": 8,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "unknown",
+          "os": "unknown",
+          "digest": "sha256:d7dc18b154d8f469781aaf15d621d4441aae3ad888c79bffef94ef9fd1ad6fb2",
+          "created": null,
+          "labels": {},
+          "layers_count": 2,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "ppc64le",
+          "os": "linux",
+          "digest": "sha256:7022dc7efb73e57750b11711907e3b25032187e556ef29f3955cadb83ffaeff7",
+          "created": "2026-03-24T23:19:53.370320209Z",
+          "labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+          },
+          "layers_count": 8,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "unknown",
+          "os": "unknown",
+          "digest": "sha256:5a56c3b4e08a2d191739dbd2aafec05e5e4566fa8c285169eebfe7c8b4a854b8",
+          "created": null,
+          "labels": {},
+          "layers_count": 2,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "riscv64",
+          "os": "linux",
+          "digest": "sha256:36f5ee465ee28a6aa265db08b5a2ae7006ea7908e640619f230287679026eb69",
+          "created": "2026-03-25T06:35:58.461022065Z",
+          "labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+          },
+          "layers_count": 8,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "unknown",
+          "os": "unknown",
+          "digest": "sha256:ccc99c172862fa7ec882906160a366ce4e212482256a6e0bbaac428ff420631e",
+          "created": null,
+          "labels": {},
+          "layers_count": 2,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "s390x",
+          "os": "linux",
+          "digest": "sha256:40cf5d206d4e2053a9479db5fc191b3ef6d72304674d5dd4ee7b40b3b61e4312",
+          "created": "2026-03-24T23:13:28.606976899Z",
+          "labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+          },
+          "layers_count": 8,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        },
+        {
+          "architecture": "unknown",
+          "os": "unknown",
+          "digest": "sha256:20e0cc4c3703dc82bd029d2994e94bb8ab365e03ca4cfc9c7197111c1dcd5125",
+          "created": null,
+          "labels": {},
+          "layers_count": 2,
+          "size": 0,
+          "exposed_ports": [],
+          "env": [],
+          "variant": null,
+          "user": ""
+        }
+      ],
+      "inspect": {},
+      "tags": [
+        "1",
+        "1-alpine",
+        "1-alpine-otel",
+        "1-alpine-perl",
+        "1-alpine-slim",
+        "1-alpine3.17",
+        "1-alpine3.17-perl",
+        "1-alpine3.17-slim",
+        "1-alpine3.18",
+        "1-alpine3.18-otel",
+        "1-alpine3.18-perl",
+        "1-alpine3.18-slim",
+        "1-alpine3.19",
+        "1-alpine3.19-otel",
+        "1-alpine3.19-perl",
+        "1-alpine3.19-slim",
+        "1-alpine3.20",
+        "1-alpine3.20-otel",
+        "1-alpine3.20-perl",
+        "1-alpine3.20-slim",
+        "1-alpine3.21",
+        "1-alpine3.21-otel",
+        "1-alpine3.21-perl",
+        "1-alpine3.21-slim",
+        "1-alpine3.22",
+        "1-alpine3.22-otel",
+        "1-alpine3.22-perl",
+        "1-alpine3.22-slim",
+        "1-alpine3.23",
+        "1-alpine3.23-otel",
+        "1-alpine3.23-perl",
+        "1-alpine3.23-slim",
+        "1-bookworm",
+        "1-bookworm-otel",
+        "1-bookworm-perl",
+        "1-bullseye",
+        "1-bullseye-perl",
+        "1-otel",
+        "1-perl",
+        "1-trixie",
+        "1-trixie-otel",
+        "1-trixie-perl",
+        "1.10",
+        "1.10-alpine",
+        "1.10.0",
+        "1.10.0-alpine",
+        "1.10.1",
+        "1.10.1-alpine",
+        "1.10.2",
+        "1.10.2-alpine",
+        "1.10.3",
+        "1.10.3-alpine",
+        "1.11",
+        "1.11-alpine",
+        "1.11.0",
+        "1.11.0-alpine",
+        "1.11.1",
+        "1.11.1-alpine",
+        "1.11.10",
+        "1.11.10-alpine",
+        "1.11.12",
+        "1.11.12-alpine",
+        "1.11.13",
+        "1.11.13-alpine",
+        "1.11.3",
+        "1.11.3-alpine",
+        "1.11.4",
+        "1.11.4-alpine",
+        "1.11.5",
+        "1.11.5-alpine",
+        "1.11.6",
+        "1.11.6-alpine",
+        "1.11.7",
+        "1.11.7-alpine",
+        "1.11.8",
+        "1.11.8-alpine",
+        "1.11.9",
+        "1.11.9-alpine",
+        "1.12",
+        "1.12-alpine",
+        "1.12-alpine-perl",
+        "1.12-perl",
+        "1.12.0",
+        "1.12.0-alpine",
+        "1.12.0-alpine-perl",
+        "1.12.0-perl",
+        "1.12.1",
+        "1.12.1-alpine",
+        "1.12.1-alpine-perl",
+        "1.12.1-perl",
+        "1.12.2",
+        "1.12.2-alpine",
+        "1.12.2-alpine-perl",
+        "1.12.2-perl",
+        "1.13",
+        "1.13-alpine",
+        "1.13-alpine-perl",
+        "1.13-perl",
+        "1.13.0",
+        "1.13.0-alpine",
+        "1.13.0-alpine-perl",
+        "1.13.0-perl",
+        "1.13.1",
+        "1.13.1-alpine",
+        "1.13.1-alpine-perl",
+        "1.13.1-perl",
+        "1.13.10",
+        "1.13.10-alpine",
+        "1.13.10-alpine-perl",
+        "1.13.10-perl",
+        "1.13.11",
+        "1.13.11-alpine",
+        "1.13.11-alpine-perl",
+        "1.13.11-perl",
+        "1.13.12",
+        "1.13.12-alpine",
+        "1.13.12-alpine-perl",
+        "1.13.12-perl",
+        "1.13.2",
+        "1.13.2-alpine",
+        "1.13.2-alpine-perl",
+        "1.13.2-perl",
+        "1.13.3",
+        "1.13.3-alpine",
+        "1.13.3-alpine-perl",
+        "1.13.3-perl",
+        "1.13.5",
+        "1.13.5-alpine",
+        "1.13.5-alpine-perl",
+        "1.13.5-perl",
+        "1.13.6",
+        "1.13.6-alpine",
+        "1.13.6-alpine-perl",
+        "1.13.6-perl",
+        "1.13.7",
+        "1.13.7-alpine",
+        "1.13.7-alpine-perl",
+        "1.13.7-perl",
+        "1.13.8",
+        "1.13.8-alpine",
+        "1.13.8-alpine-perl",
+        "1.13.8-perl",
+        "1.13.9",
+        "1.13.9-alpine",
+        "1.13.9-alpine-perl",
+        "1.13.9-perl",
+        "1.14",
+        "1.14-alpine",
+        "1.14-alpine-perl",
+        "1.14-perl",
+        "1.14.0",
+        "1.14.0-alpine",
+        "1.14.0-alpine-perl",
+        "1.14.0-perl",
+        "1.14.1",
+        "1.14.1-alpine",
+        "1.14.1-alpine-perl",
+        "1.14.1-perl",
+        "1.14.2",
+        "1.14.2-alpine",
+        "1.14.2-alpine-perl",
+        "1.14.2-perl",
+        "1.15",
+        "1.15-alpine",
+        "1.15-alpine-perl",
+        "1.15-perl",
+        "1.15.0",
+        "1.15.0-alpine",
+        "1.15.0-alpine-perl",
+        "1.15.0-perl",
+        "1.15.1",
+        "1.15.1-alpine",
+        "1.15.1-alpine-perl",
+        "1.15.1-perl",
+        "1.15.10",
+        "1.15.10-alpine",
+        "1.15.10-alpine-perl",
+        "1.15.10-perl",
+        "1.15.11",
+        "1.15.11-alpine",
+        "1.15.11-alpine-perl",
+        "1.15.11-perl",
+        "1.15.12",
+        "1.15.12-alpine",
+        "1.15.12-alpine-perl",
+        "1.15.12-perl",
+        "1.15.2",
+        "1.15.2-alpine",
+        "1.15.2-alpine-perl",
+        "1.15.2-perl",
+        "1.15.3",
+        "1.15.3-alpine",
+        "1.15.3-alpine-perl",
+        "1.15.3-perl",
+        "1.15.4",
+        "1.15.4-alpine",
+        "1.15.4-alpine-perl",
+        "1.15.4-perl",
+        "1.15.5",
+        "1.15.5-alpine",
+        "1.15.5-alpine-perl",
+        "1.15.5-perl",
+        "1.15.6",
+        "1.15.6-alpine",
+        "1.15.6-alpine-perl",
+        "1.15.6-perl",
+        "1.15.7",
+        "1.15.7-alpine",
+        "1.15.7-alpine-perl",
+        "1.15.7-perl",
+        "1.15.8",
+        "1.15.8-alpine",
+        "1.15.8-alpine-perl",
+        "1.15.8-perl",
+        "1.15.9",
+        "1.15.9-alpine",
+        "1.15.9-alpine-perl",
+        "1.15.9-perl",
+        "1.16",
+        "1.16-alpine",
+        "1.16-alpine-perl",
+        "1.16-perl",
+        "1.16.0",
+        "1.16.0-alpine",
+        "1.16.0-alpine-perl",
+        "1.16.0-perl",
+        "1.16.1",
+        "1.16.1-alpine",
+        "1.16.1-alpine-perl",
+        "1.16.1-perl",
+        "1.17",
+        "1.17-alpine",
+        "1.17-alpine-perl",
+        "1.17-perl",
+        "1.17.0",
+        "1.17.0-alpine",
+        "1.17.0-alpine-perl",
+        "1.17.0-perl",
+        "1.17.1",
+        "1.17.1-alpine",
+        "1.17.1-alpine-perl",
+        "1.17.1-perl",
+        "1.17.10",
+        "1.17.10-alpine",
+        "1.17.10-alpine-perl",
+        "1.17.10-perl",
+        "1.17.2",
+        "1.17.2-alpine",
+        "1.17.2-alpine-perl",
+        "1.17.2-perl",
+        "1.17.3",
+        "1.17.3-alpine",
+        "1.17.3-alpine-perl",
+        "1.17.3-perl",
+        "1.17.4",
+        "1.17.4-alpine",
+        "1.17.4-alpine-perl",
+        "1.17.4-perl",
+        "1.17.5",
+        "1.17.5-alpine",
+        "1.17.5-alpine-perl",
+        "1.17.5-perl",
+        "1.17.6",
+        "1.17.6-alpine",
+        "1.17.6-alpine-perl",
+        "1.17.6-perl",
+        "1.17.7",
+        "1.17.7-alpine",
+        "1.17.7-alpine-perl",
+        "1.17.7-perl",
+        "1.17.8",
+        "1.17.8-alpine",
+        "1.17.8-alpine-perl",
+        "1.17.8-perl",
+        "1.17.9",
+        "1.17.9-alpine",
+        "1.17.9-alpine-perl",
+        "1.17.9-perl",
+        "1.18",
+        "1.18-alpine",
+        "1.18-alpine-perl",
+        "1.18-perl",
+        "1.18.0",
+        "1.18.0-alpine",
+        "1.18.0-alpine-perl",
+        "1.18.0-perl",
+        "1.19",
+        "1.19-alpine",
+        "1.19-alpine-perl",
+        "1.19-perl",
+        "1.19.0",
+        "1.19.0-alpine",
+        "1.19.0-alpine-perl",
+        "1.19.0-perl",
+        "1.19.1",
+        "1.19.1-alpine",
+        "1.19.1-alpine-perl",
+        "1.19.1-perl",
+        "1.19.10",
+        "1.19.10-alpine",
+        "1.19.10-alpine-perl",
+        "1.19.10-perl",
+        "1.19.2",
+        "1.19.2-alpine",
+        "1.19.2-alpine-perl",
+        "1.19.2-perl",
+        "1.19.3",
+        "1.19.3-alpine",
+        "1.19.3-alpine-perl",
+        "1.19.3-perl",
+        "1.19.4",
+        "1.19.4-alpine",
+        "1.19.4-alpine-perl",
+        "1.19.4-perl",
+        "1.19.5",
+        "1.19.5-alpine",
+        "1.19.5-alpine-perl",
+        "1.19.5-perl",
+        "1.19.6",
+        "1.19.6-alpine",
+        "1.19.6-alpine-perl",
+        "1.19.6-perl",
+        "1.19.7",
+        "1.19.7-alpine",
+        "1.19.7-alpine-perl",
+        "1.19.7-perl",
+        "1.19.8",
+        "1.19.8-alpine",
+        "1.19.8-alpine-perl",
+        "1.19.8-perl",
+        "1.19.9",
+        "1.19.9-alpine",
+        "1.19.9-alpine-perl",
+        "1.19.9-perl",
+        "1.20",
+        "1.20-alpine",
+        "1.20-alpine-perl",
+        "1.20-perl",
+        "1.20.0",
+        "1.20.0-alpine",
+        "1.20.0-alpine-perl",
+        "1.20.0-perl",
+        "1.20.1",
+        "1.20.1-alpine",
+        "1.20.1-alpine-perl",
+        "1.20.1-perl",
+        "1.20.2",
+        "1.20.2-alpine",
+        "1.20.2-alpine-perl",
+        "1.20.2-perl",
+        "1.21",
+        "1.21-alpine",
+        "1.21-alpine-perl",
+        "1.21-perl",
+        "1.21.0",
+        "1.21.0-alpine",
+        "1.21.0-alpine-perl",
+        "1.21.0-perl",
+        "1.21.1",
+        "1.21.1-alpine",
+        "1.21.1-alpine-perl",
+        "1.21.1-perl",
+        "1.21.3",
+        "1.21.3-alpine",
+        "1.21.3-alpine-perl",
+        "1.21.3-perl",
+        "1.21.4",
+        "1.21.4-alpine",
+        "1.21.4-alpine-perl",
+        "1.21.4-perl",
+        "1.21.5",
+        "1.21.5-alpine",
+        "1.21.5-alpine-perl",
+        "1.21.5-perl",
+        "1.21.6",
+        "1.21.6-alpine",
+        "1.21.6-alpine-perl",
+        "1.21.6-perl",
+        "1.22",
+        "1.22-alpine",
+        "1.22-alpine-perl",
+        "1.22-alpine-slim",
+        "1.22-alpine3.17",
+        "1.22-alpine3.17-perl",
+        "1.22-alpine3.17-slim",
+        "1.22-bullseye",
+        "1.22-bullseye-perl",
+        "1.22-perl",
+        "1.22.0",
+        "1.22.0-alpine",
+        "1.22.0-alpine-perl",
+        "1.22.0-perl",
+        "1.22.1",
+        "1.22.1-alpine",
+        "1.22.1-alpine-perl",
+        "1.22.1-alpine-slim",
+        "1.22.1-alpine3.17",
+        "1.22.1-alpine3.17-perl",
+        "1.22.1-alpine3.17-slim",
+        "1.22.1-bullseye",
+        "1.22.1-bullseye-perl",
+        "1.22.1-perl",
+        "1.23",
+        "1.23-alpine",
+        "1.23-alpine-perl",
+        "1.23-alpine-slim",
+        "1.23-alpine3.17",
+        "1.23-alpine3.17-perl",
+        "1.23-alpine3.17-slim",
+        "1.23-bullseye",
+        "1.23-bullseye-perl",
+        "1.23-perl",
+        "1.23.0",
+        "1.23.0-alpine",
+        "1.23.0-alpine-perl",
+        "1.23.0-perl",
+        "1.23.1",
+        "1.23.1-alpine",
+        "1.23.1-alpine-perl",
+        "1.23.1-perl",
+        "1.23.2",
+        "1.23.2-alpine",
+        "1.23.2-alpine-perl",
+        "1.23.2-perl",
+        "1.23.3",
+        "1.23.3-alpine",
+        "1.23.3-alpine-perl",
+        "1.23.3-alpine-slim",
+        "1.23.3-perl",
+        "1.23.4",
+        "1.23.4-alpine",
+        "1.23.4-alpine-perl",
+        "1.23.4-alpine-slim",
+        "1.23.4-alpine3.17",
+        "1.23.4-alpine3.17-perl",
+        "1.23.4-alpine3.17-slim",
+        "1.23.4-bullseye",
+        "1.23.4-bullseye-perl",
+        "1.23.4-perl",
+        "1.24",
+        "1.24-alpine",
+        "1.24-alpine-perl",
+        "1.24-alpine-slim",
+        "1.24-alpine3.17",
+        "1.24-alpine3.17-perl",
+        "1.24-alpine3.17-slim",
+        "1.24-bullseye",
+        "1.24-bullseye-perl",
+        "1.24-perl",
+        "1.24.0",
+        "1.24.0-alpine",
+        "1.24.0-alpine-perl",
+        "1.24.0-alpine-slim",
+        "1.24.0-alpine3.17",
+        "1.24.0-alpine3.17-perl",
+        "1.24.0-alpine3.17-slim",
+        "1.24.0-bullseye",
+        "1.24.0-bullseye-perl",
+        "1.24.0-perl",
+        "1.25",
+        "1.25-alpine",
+        "1.25-alpine-otel",
+        "1.25-alpine-perl",
+        "1.25-alpine-slim",
+        "1.25-alpine3.17",
+        "1.25-alpine3.17-perl",
+        "1.25-alpine3.17-slim",
+        "1.25-alpine3.18",
+        "1.25-alpine3.18-otel",
+        "1.25-alpine3.18-perl",
+        "1.25-alpine3.18-slim",
+        "1.25-alpine3.19",
+        "1.25-alpine3.19-otel",
+        "1.25-alpine3.19-perl",
+        "1.25-alpine3.19-slim",
+        "1.25-bookworm",
+        "1.25-bookworm-otel",
+        "1.25-bookworm-perl",
+        "1.25-bullseye",
+        "1.25-bullseye-perl",
+        "1.25-otel",
+        "1.25-perl",
+        "1.25.0",
+        "1.25.0-alpine",
+        "1.25.0-alpine-perl",
+        "1.25.0-alpine-slim",
+        "1.25.0-alpine3.17",
+        "1.25.0-alpine3.17-perl",
+        "1.25.0-alpine3.17-slim",
+        "1.25.0-bullseye",
+        "1.25.0-bullseye-perl",
+        "1.25.0-perl",
+        "1.25.1",
+        "1.25.1-alpine",
+        "1.25.1-alpine-perl",
+        "1.25.1-alpine-slim",
+        "1.25.1-alpine3.17",
+        "1.25.1-alpine3.17-perl",
+        "1.25.1-alpine3.17-slim",
+        "1.25.1-bookworm",
+        "1.25.1-bookworm-perl",
+        "1.25.1-perl",
+        "1.25.2",
+        "1.25.2-alpine",
+        "1.25.2-alpine-perl",
+        "1.25.2-alpine-slim",
+        "1.25.2-alpine3.18",
+        "1.25.2-alpine3.18-perl",
+        "1.25.2-alpine3.18-slim",
+        "1.25.2-bookworm",
+        "1.25.2-bookworm-perl",
+        "1.25.2-perl",
+        "1.25.3",
+        "1.25.3-alpine",
+        "1.25.3-alpine-perl",
+        "1.25.3-alpine-slim",
+        "1.25.3-alpine3.18",
+        "1.25.3-alpine3.18-perl",
+        "1.25.3-alpine3.18-slim",
+        "1.25.3-bookworm",
+        "1.25.3-bookworm-perl",
+        "1.25.3-perl",
+        "1.25.4",
+        "1.25.4-alpine",
+        "1.25.4-alpine-otel",
+        "1.25.4-alpine-perl",
+        "1.25.4-alpine-slim",
+        "1.25.4-alpine3.18",
+        "1.25.4-alpine3.18-otel",
+        "1.25.4-alpine3.18-perl",
+        "1.25.4-alpine3.18-slim",
+        "1.25.4-bookworm",
+        "1.25.4-bookworm-otel",
+        "1.25.4-bookworm-perl",
+        "1.25.4-otel",
+        "1.25.4-perl",
+        "1.25.5",
+        "1.25.5-alpine",
+        "1.25.5-alpine-otel",
+        "1.25.5-alpine-perl",
+        "1.25.5-alpine-slim",
+        "1.25.5-alpine3.19",
+        "1.25.5-alpine3.19-otel",
+        "1.25.5-alpine3.19-perl",
+        "1.25.5-alpine3.19-slim",
+        "1.25.5-bookworm",
+        "1.25.5-bookworm-otel",
+        "1.25.5-bookworm-perl",
+        "1.25.5-otel",
+        "1.25.5-perl",
+        "1.26",
+        "1.26-alpine",
+        "1.26-alpine-otel",
+        "1.26-alpine-perl",
+        "1.26-alpine-slim",
+        "1.26-alpine3.19",
+        "1.26-alpine3.19-otel",
+        "1.26-alpine3.19-perl",
+        "1.26-alpine3.19-slim",
+        "1.26-alpine3.20",
+        "1.26-alpine3.20-otel",
+        "1.26-alpine3.20-perl",
+        "1.26-alpine3.20-slim",
+        "1.26-bookworm",
+        "1.26-bookworm-otel",
+        "1.26-bookworm-perl",
+        "1.26-otel",
+        "1.26-perl",
+        "1.26.0",
+        "1.26.0-alpine",
+        "1.26.0-alpine-otel",
+        "1.26.0-alpine-perl",
+        "1.26.0-alpine-slim",
+        "1.26.0-alpine3.19",
+        "1.26.0-alpine3.19-otel",
+        "1.26.0-alpine3.19-perl",
+        "1.26.0-alpine3.19-slim",
+        "1.26.0-bookworm",
+        "1.26.0-bookworm-otel",
+        "1.26.0-bookworm-perl",
+        "1.26.0-otel",
+        "1.26.0-perl",
+        "1.26.1",
+        "1.26.1-alpine",
+        "1.26.1-alpine-otel",
+        "1.26.1-alpine-perl",
+        "1.26.1-alpine-slim",
+        "1.26.1-alpine3.19",
+        "1.26.1-alpine3.19-otel",
+        "1.26.1-alpine3.19-perl",
+        "1.26.1-alpine3.19-slim",
+        "1.26.1-bookworm",
+        "1.26.1-bookworm-otel",
+        "1.26.1-bookworm-perl",
+        "1.26.1-otel",
+        "1.26.1-perl",
+        "1.26.2",
+        "1.26.2-alpine",
+        "1.26.2-alpine-otel",
+        "1.26.2-alpine-perl",
+        "1.26.2-alpine-slim",
+        "1.26.2-alpine3.20",
+        "1.26.2-alpine3.20-otel",
+        "1.26.2-alpine3.20-perl",
+        "1.26.2-alpine3.20-slim",
+        "1.26.2-bookworm",
+        "1.26.2-bookworm-otel",
+        "1.26.2-bookworm-perl",
+        "1.26.2-otel",
+        "1.26.2-perl",
+        "1.26.3",
+        "1.26.3-alpine",
+        "1.26.3-alpine-otel",
+        "1.26.3-alpine-perl",
+        "1.26.3-alpine-slim",
+        "1.26.3-alpine3.20",
+        "1.26.3-alpine3.20-otel",
+        "1.26.3-alpine3.20-perl",
+        "1.26.3-alpine3.20-slim",
+        "1.26.3-bookworm",
+        "1.26.3-bookworm-otel",
+        "1.26.3-bookworm-perl",
+        "1.26.3-otel",
+        "1.26.3-perl",
+        "1.27",
+        "1.27-alpine",
+        "1.27-alpine-otel",
+        "1.27-alpine-perl",
+        "1.27-alpine-slim",
+        "1.27-alpine3.19",
+        "1.27-alpine3.19-otel",
+        "1.27-alpine3.19-perl",
+        "1.27-alpine3.19-slim",
+        "1.27-alpine3.20",
+        "1.27-alpine3.20-otel",
+        "1.27-alpine3.20-perl",
+        "1.27-alpine3.20-slim",
+        "1.27-alpine3.21",
+        "1.27-alpine3.21-otel",
+        "1.27-alpine3.21-perl",
+        "1.27-alpine3.21-slim",
+        "1.27-bookworm",
+        "1.27-bookworm-otel",
+        "1.27-bookworm-perl",
+        "1.27-otel",
+        "1.27-perl",
+        "1.27.0",
+        "1.27.0-alpine",
+        "1.27.0-alpine-otel",
+        "1.27.0-alpine-perl",
+        "1.27.0-alpine-slim",
+        "1.27.0-alpine3.19",
+        "1.27.0-alpine3.19-otel",
+        "1.27.0-alpine3.19-perl",
+        "1.27.0-alpine3.19-slim",
+        "1.27.0-bookworm",
+        "1.27.0-bookworm-otel",
+        "1.27.0-bookworm-perl",
+        "1.27.0-otel",
+        "1.27.0-perl",
+        "1.27.1",
+        "1.27.1-alpine",
+        "1.27.1-alpine-otel",
+        "1.27.1-alpine-perl",
+        "1.27.1-alpine-slim",
+        "1.27.1-alpine3.20",
+        "1.27.1-alpine3.20-otel",
+        "1.27.1-alpine3.20-perl",
+        "1.27.1-alpine3.20-slim",
+        "1.27.1-bookworm",
+        "1.27.1-bookworm-otel",
+        "1.27.1-bookworm-perl",
+        "1.27.1-otel",
+        "1.27.1-perl",
+        "1.27.2",
+        "1.27.2-alpine",
+        "1.27.2-alpine-otel",
+        "1.27.2-alpine-perl",
+        "1.27.2-alpine-slim",
+        "1.27.2-alpine3.20",
+        "1.27.2-alpine3.20-otel",
+        "1.27.2-alpine3.20-perl",
+        "1.27.2-alpine3.20-slim",
+        "1.27.2-bookworm",
+        "1.27.2-bookworm-otel",
+        "1.27.2-bookworm-perl",
+        "1.27.2-otel",
+        "1.27.2-perl",
+        "1.27.3",
+        "1.27.3-alpine",
+        "1.27.3-alpine-otel",
+        "1.27.3-alpine-perl",
+        "1.27.3-alpine-slim",
+        "1.27.3-alpine3.20",
+        "1.27.3-alpine3.20-otel",
+        "1.27.3-alpine3.20-perl",
+        "1.27.3-alpine3.20-slim",
+        "1.27.3-bookworm",
+        "1.27.3-bookworm-otel",
+        "1.27.3-bookworm-perl",
+        "1.27.3-otel",
+        "1.27.3-perl",
+        "1.27.4",
+        "1.27.4-alpine",
+        "1.27.4-alpine-otel",
+        "1.27.4-alpine-perl",
+        "1.27.4-alpine-slim",
+        "1.27.4-alpine3.21",
+        "1.27.4-alpine3.21-otel",
+        "1.27.4-alpine3.21-perl",
+        "1.27.4-alpine3.21-slim",
+        "1.27.4-bookworm",
+        "1.27.4-bookworm-otel",
+        "1.27.4-bookworm-perl",
+        "1.27.4-otel",
+        "1.27.4-perl",
+        "1.27.5",
+        "1.27.5-alpine",
+        "1.27.5-alpine-otel",
+        "1.27.5-alpine-perl",
+        "1.27.5-alpine-slim",
+        "1.27.5-alpine3.21",
+        "1.27.5-alpine3.21-otel",
+        "1.27.5-alpine3.21-perl",
+        "1.27.5-alpine3.21-slim",
+        "1.27.5-bookworm",
+        "1.27.5-bookworm-otel",
+        "1.27.5-bookworm-perl",
+        "1.27.5-otel",
+        "1.27.5-perl",
+        "1.28",
+        "1.28-alpine",
+        "1.28-alpine-otel",
+        "1.28-alpine-perl",
+        "1.28-alpine-slim",
+        "1.28-alpine3.21",
+        "1.28-alpine3.21-otel",
+        "1.28-alpine3.21-perl",
+        "1.28-alpine3.21-slim",
+        "1.28-alpine3.23",
+        "1.28-alpine3.23-otel",
+        "1.28-alpine3.23-perl",
+        "1.28-alpine3.23-slim",
+        "1.28-bookworm",
+        "1.28-bookworm-otel",
+        "1.28-bookworm-perl",
+        "1.28-otel",
+        "1.28-perl",
+        "1.28-trixie",
+        "1.28-trixie-otel",
+        "1.28-trixie-perl",
+        "1.28.0",
+        "1.28.0-alpine",
+        "1.28.0-alpine-otel",
+        "1.28.0-alpine-perl",
+        "1.28.0-alpine-slim",
+        "1.28.0-alpine3.21",
+        "1.28.0-alpine3.21-otel",
+        "1.28.0-alpine3.21-perl",
+        "1.28.0-alpine3.21-slim",
+        "1.28.0-bookworm",
+        "1.28.0-bookworm-otel",
+        "1.28.0-bookworm-perl",
+        "1.28.0-otel",
+        "1.28.0-perl",
+        "1.28.1",
+        "1.28.1-alpine",
+        "1.28.1-alpine-otel",
+        "1.28.1-alpine-perl",
+        "1.28.1-alpine-slim",
+        "1.28.1-alpine3.23",
+        "1.28.1-alpine3.23-otel",
+        "1.28.1-alpine3.23-perl",
+        "1.28.1-alpine3.23-slim",
+        "1.28.1-otel",
+        "1.28.1-perl",
+        "1.28.1-trixie",
+        "1.28.1-trixie-otel",
+        "1.28.1-trixie-perl",
+        "1.28.2",
+        "1.28.2-alpine",
+        "1.28.2-alpine-otel",
+        "1.28.2-alpine-perl",
+        "1.28.2-alpine-slim",
+        "1.28.2-alpine3.23",
+        "1.28.2-alpine3.23-otel",
+        "1.28.2-alpine3.23-perl",
+        "1.28.2-alpine3.23-slim",
+        "1.28.2-otel",
+        "1.28.2-perl",
+        "1.28.2-trixie",
+        "1.28.2-trixie-otel",
+        "1.28.2-trixie-perl",
+        "1.28.3",
+        "1.28.3-alpine",
+        "1.28.3-alpine-otel",
+        "1.28.3-alpine-perl",
+        "1.28.3-alpine-slim",
+        "1.28.3-alpine3.23",
+        "1.28.3-alpine3.23-otel",
+        "1.28.3-alpine3.23-perl",
+        "1.28.3-alpine3.23-slim",
+        "1.28.3-otel",
+        "1.28.3-perl",
+        "1.28.3-trixie",
+        "1.28.3-trixie-otel",
+        "1.28.3-trixie-perl",
+        "1.29",
+        "1.29-alpine",
+        "1.29-alpine-otel",
+        "1.29-alpine-perl",
+        "1.29-alpine-slim",
+        "1.29-alpine3.22",
+        "1.29-alpine3.22-otel",
+        "1.29-alpine3.22-perl",
+        "1.29-alpine3.22-slim",
+        "1.29-alpine3.23",
+        "1.29-alpine3.23-otel",
+        "1.29-alpine3.23-perl",
+        "1.29-alpine3.23-slim",
+        "1.29-bookworm",
+        "1.29-bookworm-otel",
+        "1.29-bookworm-perl",
+        "1.29-otel",
+        "1.29-perl",
+        "1.29-trixie",
+        "1.29-trixie-otel",
+        "1.29-trixie-perl",
+        "1.29.0",
+        "1.29.0-alpine",
+        "1.29.0-alpine-otel",
+        "1.29.0-alpine-perl",
+        "1.29.0-alpine-slim",
+        "1.29.0-alpine3.22",
+        "1.29.0-alpine3.22-otel",
+        "1.29.0-alpine3.22-perl",
+        "1.29.0-alpine3.22-slim",
+        "1.29.0-bookworm",
+        "1.29.0-bookworm-otel",
+        "1.29.0-bookworm-perl",
+        "1.29.0-otel",
+        "1.29.0-perl",
+        "1.29.1",
+        "1.29.1-alpine",
+        "1.29.1-alpine-otel",
+        "1.29.1-alpine-perl",
+        "1.29.1-alpine-slim",
+        "1.29.1-alpine3.22",
+        "1.29.1-alpine3.22-otel",
+        "1.29.1-alpine3.22-perl",
+        "1.29.1-alpine3.22-slim",
+        "1.29.1-bookworm",
+        "1.29.1-bookworm-otel",
+        "1.29.1-bookworm-perl",
+        "1.29.1-otel",
+        "1.29.1-perl",
+        "1.29.2",
+        "1.29.2-alpine",
+        "1.29.2-alpine-otel",
+        "1.29.2-alpine-perl",
+        "1.29.2-alpine-slim",
+        "1.29.2-alpine3.22",
+        "1.29.2-alpine3.22-otel",
+        "1.29.2-alpine3.22-perl",
+        "1.29.2-alpine3.22-slim",
+        "1.29.2-otel",
+        "1.29.2-perl",
+        "1.29.2-trixie",
+        "1.29.2-trixie-otel",
+        "1.29.2-trixie-perl",
+        "1.29.3",
+        "1.29.3-alpine",
+        "1.29.3-alpine-otel",
+        "1.29.3-alpine-perl",
+        "1.29.3-alpine-slim",
+        "1.29.3-alpine3.22",
+        "1.29.3-alpine3.22-otel",
+        "1.29.3-alpine3.22-perl",
+        "1.29.3-alpine3.22-slim",
+        "1.29.3-otel",
+        "1.29.3-perl",
+        "1.29.3-trixie",
+        "1.29.3-trixie-otel",
+        "1.29.3-trixie-perl",
+        "1.29.4",
+        "1.29.4-alpine",
+        "1.29.4-alpine-otel",
+        "1.29.4-alpine-perl",
+        "1.29.4-alpine-slim",
+        "1.29.4-alpine3.23",
+        "1.29.4-alpine3.23-otel",
+        "1.29.4-alpine3.23-perl",
+        "1.29.4-alpine3.23-slim",
+        "1.29.4-otel",
+        "1.29.4-perl",
+        "1.29.4-trixie",
+        "1.29.4-trixie-otel",
+        "1.29.4-trixie-perl",
+        "1.29.5",
+        "1.29.5-alpine",
+        "1.29.5-alpine-otel",
+        "1.29.5-alpine-perl",
+        "1.29.5-alpine-slim",
+        "1.29.5-alpine3.23",
+        "1.29.5-alpine3.23-otel",
+        "1.29.5-alpine3.23-perl",
+        "1.29.5-alpine3.23-slim",
+        "1.29.5-otel",
+        "1.29.5-perl",
+        "1.29.5-trixie",
+        "1.29.5-trixie-otel",
+        "1.29.5-trixie-perl",
+        "1.29.6",
+        "1.29.6-alpine",
+        "1.29.6-alpine-otel",
+        "1.29.6-alpine-perl",
+        "1.29.6-alpine-slim",
+        "1.29.6-alpine3.23",
+        "1.29.6-alpine3.23-otel",
+        "1.29.6-alpine3.23-perl",
+        "1.29.6-alpine3.23-slim",
+        "1.29.6-otel",
+        "1.29.6-perl",
+        "1.29.6-trixie",
+        "1.29.6-trixie-otel",
+        "1.29.6-trixie-perl",
+        "1.29.7",
+        "1.29.7-alpine",
+        "1.29.7-alpine-otel",
+        "1.29.7-alpine-perl",
+        "1.29.7-alpine-slim",
+        "1.29.7-alpine3.23",
+        "1.29.7-alpine3.23-otel",
+        "1.29.7-alpine3.23-perl",
+        "1.29.7-alpine3.23-slim",
+        "1.29.7-otel",
+        "1.29.7-perl",
+        "1.29.7-trixie",
+        "1.29.7-trixie-otel",
+        "1.29.7-trixie-perl",
+        "1.7",
+        "1.7.1",
+        "1.7.10",
+        "1.7.11",
+        "1.7.12",
+        "1.7.5",
+        "1.7.6",
+        "1.7.7",
+        "1.7.8",
+        "1.7.9",
+        "1.8",
+        "1.8-alpine",
+        "1.8.1",
+        "1.8.1-alpine",
+        "1.9",
+        "1.9-alpine",
+        "1.9.0",
+        "1.9.1",
+        "1.9.10",
+        "1.9.11",
+        "1.9.12",
+        "1.9.14",
+        "1.9.14-alpine",
+        "1.9.15",
+        "1.9.15-alpine",
+        "1.9.2",
+        "1.9.3",
+        "1.9.4",
+        "1.9.5",
+        "1.9.6",
+        "1.9.7",
+        "1.9.8",
+        "1.9.9",
+        "alpine",
+        "alpine-otel",
+        "alpine-perl",
+        "alpine-slim",
+        "alpine3.17",
+        "alpine3.17-perl",
+        "alpine3.17-slim",
+        "alpine3.18",
+        "alpine3.18-otel",
+        "alpine3.18-perl",
+        "alpine3.18-slim",
+        "alpine3.19",
+        "alpine3.19-otel",
+        "alpine3.19-perl",
+        "alpine3.19-slim",
+        "alpine3.20",
+        "alpine3.20-otel",
+        "alpine3.20-perl",
+        "alpine3.20-slim",
+        "alpine3.21",
+        "alpine3.21-otel",
+        "alpine3.21-perl",
+        "alpine3.21-slim",
+        "alpine3.22",
+        "alpine3.22-otel",
+        "alpine3.22-perl",
+        "alpine3.22-slim",
+        "alpine3.23",
+        "alpine3.23-otel",
+        "alpine3.23-perl",
+        "alpine3.23-slim",
+        "bookworm",
+        "bookworm-otel",
+        "bookworm-perl",
+        "bullseye",
+        "bullseye-perl",
+        "latest",
+        "mainline",
+        "mainline-alpine",
+        "mainline-alpine-otel",
+        "mainline-alpine-perl",
+        "mainline-alpine-slim",
+        "mainline-alpine3.17",
+        "mainline-alpine3.17-perl",
+        "mainline-alpine3.17-slim",
+        "mainline-alpine3.18",
+        "mainline-alpine3.18-otel",
+        "mainline-alpine3.18-perl",
+        "mainline-alpine3.18-slim",
+        "mainline-alpine3.19",
+        "mainline-alpine3.19-otel",
+        "mainline-alpine3.19-perl",
+        "mainline-alpine3.19-slim",
+        "mainline-alpine3.20",
+        "mainline-alpine3.20-otel",
+        "mainline-alpine3.20-perl",
+        "mainline-alpine3.20-slim",
+        "mainline-alpine3.21",
+        "mainline-alpine3.21-otel",
+        "mainline-alpine3.21-perl",
+        "mainline-alpine3.21-slim",
+        "mainline-alpine3.22",
+        "mainline-alpine3.22-otel",
+        "mainline-alpine3.22-perl",
+        "mainline-alpine3.22-slim",
+        "mainline-alpine3.23",
+        "mainline-alpine3.23-otel",
+        "mainline-alpine3.23-perl",
+        "mainline-alpine3.23-slim",
+        "mainline-bookworm",
+        "mainline-bookworm-otel",
+        "mainline-bookworm-perl",
+        "mainline-bullseye",
+        "mainline-bullseye-perl",
+        "mainline-otel",
+        "mainline-perl",
+        "mainline-trixie",
+        "mainline-trixie-otel",
+        "mainline-trixie-perl",
+        "otel",
+        "perl",
+        "stable",
+        "stable-alpine",
+        "stable-alpine-otel",
+        "stable-alpine-perl",
+        "stable-alpine-slim",
+        "stable-alpine3.17",
+        "stable-alpine3.17-perl",
+        "stable-alpine3.17-slim",
+        "stable-alpine3.19",
+        "stable-alpine3.19-otel",
+        "stable-alpine3.19-perl",
+        "stable-alpine3.19-slim",
+        "stable-alpine3.20",
+        "stable-alpine3.20-otel",
+        "stable-alpine3.20-perl",
+        "stable-alpine3.20-slim",
+        "stable-alpine3.21",
+        "stable-alpine3.21-otel",
+        "stable-alpine3.21-perl",
+        "stable-alpine3.21-slim",
+        "stable-alpine3.23",
+        "stable-alpine3.23-otel",
+        "stable-alpine3.23-perl",
+        "stable-alpine3.23-slim",
+        "stable-bookworm",
+        "stable-bookworm-otel",
+        "stable-bookworm-perl",
+        "stable-bullseye",
+        "stable-bullseye-perl",
+        "stable-otel",
+        "stable-perl",
+        "stable-trixie",
+        "stable-trixie-otel",
+        "stable-trixie-perl",
+        "trixie",
+        "trixie-otel",
+        "trixie-perl"
+      ]
+    },
+    "trivy": {
+      "analyzer": "trivy",
+      "repository": "library/nginx",
+      "tag": "alpine",
+      "trivy_version": "2",
+      "vulnerability_count": 2,
+      "critical_count": 0,
+      "high_count": 1,
+      "medium_count": 1,
+      "low_count": 0,
+      "unknown_count": 0,
+      "fixed_count": 2,
+      "secrets_count": 0,
+      "targets": [
+        {
+          "Target": "library/nginx:alpine (alpine 3.23.3)",
+          "Vulnerabilities": [
+            {
+              "VulnerabilityID": "CVE-2026-22184",
+              "PkgName": "zlib",
+              "InstalledVersion": "1.3.1-r2",
+              "FixedVersion": "1.3.2-r0",
+              "Severity": "HIGH",
+              "Title": "zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility",
+              "Description": "zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer."
+            },
+            {
+              "VulnerabilityID": "CVE-2026-27171",
+              "PkgName": "zlib",
+              "InstalledVersion": "1.3.1-r2",
+              "FixedVersion": "1.3.2-r0",
+              "Severity": "MEDIUM",
+              "Title": "zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions",
+              "Description": "zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition."
+            }
+          ],
+          "Secrets": null
+        }
+      ]
+    },
+    "size": {
+      "analyzer": "size",
+      "repository": "library/nginx",
+      "tag": "alpine",
+      "multi_arch": true,
+      "total_compressed_bytes": 25999056,
+      "total_compressed_human": "24.8 MB",
+      "layer_count": 8,
+      "config_size_bytes": 0,
+      "layers": [],
+      "platforms": [
+        {
+          "platform": "linux/amd64",
+          "compressed_bytes": 25999056,
+          "compressed_human": "24.8 MB",
+          "layer_count": 8
+        },
+        {
+          "platform": "unknown/unknown",
+          "compressed_bytes": 909904,
+          "compressed_human": "888.6 KB",
+          "layer_count": 2
+        },
+        {
+          "platform": "linux/arm/v6",
+          "compressed_bytes": 19714315,
+          "compressed_human": "18.8 MB",
+          "layer_count": 8
+        },
+        {
+          "platform": "unknown/unknown",
+          "compressed_bytes": 22616,
+          "compressed_human": "22.1 KB",
+          "layer_count": 1
+        },
+        {
+          "platform": "linux/arm/v7",
+          "compressed_bytes": 21684291,
+          "compressed_human": "20.7 MB",
+          "layer_count": 8
+        },
+        {
+          "platform": "unknown/unknown",
+          "compressed_bytes": 909467,
+          "compressed_human": "888.2 KB",
+          "layer_count": 2
+        },
+        {
+          "platform": "linux/arm64/v8",
+          "compressed_bytes": 25826296,
+          "compressed_human": "24.6 MB",
+          "layer_count": 8
+        },
+        {
+          "platform": "unknown/unknown",
+          "compressed_bytes": 909559,
+          "compressed_human": "888.2 KB",
+          "layer_count": 2
+        },
+        {
+          "platform": "linux/386",
+          "compressed_bytes": 25345803,
+          "compressed_human": "24.2 MB",
+          "layer_count": 8
+        },
+        {
+          "platform": "unknown/unknown",
+          "compressed_bytes": 909788,
+          "compressed_human": "888.5 KB",
+          "layer_count": 2
+        },
+        {
+          "platform": "linux/ppc64le",
+          "compressed_bytes": 26378150,
+          "compressed_human": "25.2 MB",
+          "layer_count": 8
+        },
+        {
+          "platform": "unknown/unknown",
+          "compressed_bytes": 909403,
+          "compressed_human": "888.1 KB",
+          "layer_count": 2
+        },
+        {
+          "platform": "linux/riscv64",
+          "compressed_bytes": 23580863,
+          "compressed_human": "22.5 MB",
+          "layer_count": 8
+        },
+        {
+          "platform": "unknown/unknown",
+          "compressed_bytes": 909398,
+          "compressed_human": "888.1 KB",
+          "layer_count": 2
+        },
+        {
+          "platform": "linux/s390x",
+          "compressed_bytes": 26153065,
+          "compressed_human": "24.9 MB",
+          "layer_count": 8
+        },
+        {
+          "platform": "unknown/unknown",
+          "compressed_bytes": 909254,
+          "compressed_human": "887.9 KB",
+          "layer_count": 2
+        }
+      ]
+    }
+  }
+}
