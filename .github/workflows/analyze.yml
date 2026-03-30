@@ -1,0 +1,47 @@
+name: Analyze Image
+
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        description: "Image to analyze (e.g. nginx:latest or ghcr.io/user/repo:tag)"
+        required: true
+      playbook:
+        description: "URL or path to a custom playbook (optional)"
+        required: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run Analysis
+        run: |
+          # Use docker to run regis-cli with the workspace mounted.
+          # We use --user root to ensure we can write to the mounted volume,
+          # and map the local static/archive/ directory to the container.
+          docker run --rm \
+            -v ${{ github.workspace }}:/app \
+            -w /app \
+            --user root \
+            ghcr.io/trivoallan/regis-cli:latest \
+            analyze "${{ github.event.inputs.image }}" \
+            --archive static/archive \
+            ${{ github.event.inputs.playbook && format('--playbook {0}', github.event.inputs.playbook) || '' }}
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/archive/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: archive report for ${{ github.event.inputs.image }}"
+            git push origin main
+          fi
