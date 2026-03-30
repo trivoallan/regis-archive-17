@@ -1,5 +1,25 @@
 [
   {
+    "id": "registry-1.docker.io/library/nginx/alpine/2026-03-30T02-05-26",
+    "timestamp": "2026-03-30T02:05:26.434385+00:00",
+    "registry": "registry-1.docker.io",
+    "repository": "library/nginx",
+    "tag": "alpine",
+    "digest": "sha256-e7257f1ef28ba17cf7c248cb8ccf6f0c6e0228ab9c315c152f9c203cd34cf6d1",
+    "score": 0,
+    "tier": null,
+    "rules_passed": 0,
+    "rules_total": 0,
+    "cve_critical": 0,
+    "cve_high": 1,
+    "cve_medium": 1,
+    "cve_low": 0,
+    "age_days": 5,
+    "sbom_component_count": null,
+    "scorecard_score": 5.1,
+    "path": "registry-1.docker.io/library_nginx/alpine/2026-03-30T02-05-26Z/report.json"
+  },
+  {
     "id": "registry-1.docker.io/library/nginx/latest/2026-03-30T01-58-04",
     "timestamp": "2026-03-30T01:58:04.491251+00:00",
     "registry": "registry-1.docker.io",
