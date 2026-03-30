@@ -1,5 +1,25 @@
 [
   {
+    "id": "registry-1.docker.io/library/busybox/latest/2026-03-30T02-13-20",
+    "timestamp": "2026-03-30T02:13:20.105548+00:00",
+    "registry": "registry-1.docker.io",
+    "repository": "library/busybox",
+    "tag": "latest",
+    "digest": "sha256-1487d0af5f52b4ba31c7e465126ee2123fe3f2305d638e7827681e7cf6c83d5e",
+    "score": 0,
+    "tier": null,
+    "rules_passed": 0,
+    "rules_total": 0,
+    "cve_critical": 0,
+    "cve_high": 0,
+    "cve_medium": 0,
+    "cve_low": 0,
+    "age_days": 549,
+    "sbom_component_count": null,
+    "scorecard_score": null,
+    "path": "registry-1.docker.io/library_busybox/latest/2026-03-30T02-13-20Z/report.json"
+  },
+  {
     "id": "registry-1.docker.io/library/nginx/alpine/2026-03-30T02-07-07",
     "timestamp": "2026-03-30T02:07:07.874676+00:00",
     "registry": "registry-1.docker.io",
